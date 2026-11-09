@@ -21,11 +21,10 @@
 ## ----------------------------------------------------------------------------
 
 ## Resource Group
-module "resource_group" {
-  source  = "../../../resource-group"
-  context = module.context.self
-
+resource "azurerm_resource_group" "this" {
   location = var.region
+  name     = "${module.context.id}-rg"
+  tags     = module.context.tags
 }
 
 
@@ -39,8 +38,8 @@ module "log_analytics" {
   enable_application_insights = true
   internet_ingestion_enabled  = true
   internet_query_enabled      = true
-  location                    = module.resource_group.location
-  resource_group_name         = module.resource_group.name
+  location                    = azurerm_resource_group.this.location
+  resource_group_name         = azurerm_resource_group.this.name
   retention_in_days           = 30
   sku                         = "PerGB2018"
 }

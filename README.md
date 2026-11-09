@@ -11,7 +11,7 @@ Creates a Log Analytics workspace and, optionally, a workspace-based Application
 
 ## Module Priority
 
-No SevenPico, SevenPicoForks or CloudPosse module exists for Azure monitoring, so the module uses `azurerm_log_analytics_workspace` and `azurerm_application_insights` directly. The workspace name is limited to 63 characters, the Azure maximum. Naming and the enabled flag come from the context module. `_context.tf` declares the root context (`SevenPico/context/null` `2.0.0`); child contexts use the local `../null-context` module.
+No SevenPico, SevenPicoForks or CloudPosse module exists for Azure monitoring, so the module uses `azurerm_log_analytics_workspace` and `azurerm_application_insights` directly. The workspace name is limited to 63 characters, the Azure maximum. Naming and the enabled flag come from the context module. `_context.tf` declares the root context (`SevenPico/context/null` `2.0.0`); child contexts use `git::https://github.com/raringgroup/terraform-null-context.git?ref=v0.1.0`.
 
 ## Inputs
 
@@ -47,7 +47,7 @@ Workspace shared keys are deliberately not output.
 
 ```hcl
 terraform {
-  source = "git::<repo-url>//modules/log-analytics?ref=log-analytics-v<version>"
+  source = "git::https://github.com/raringgroup/terraform-azurerm-log-analytics-workspace.git?ref=develop"
 }
 
 dependency "resource_group" {

@@ -21,7 +21,7 @@
 
 ## Application Insights Context
 module "application_insights_context" {
-  source  = "../null-context"
+  source  = "git::https://github.com/raringgroup/terraform-null-context.git?ref=v0.1.0"
   context = module.context.self
   enabled = module.context.enabled && var.enable_application_insights
 
