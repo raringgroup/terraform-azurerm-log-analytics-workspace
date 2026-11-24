@@ -14,7 +14,7 @@
 ## limitations under the License.
 ## ----------------------------------------------------------------------------
 ##
-##  modules/log-analytics/examples/complete/log-analytics.tf
+##  examples/complete/log-analytics.tf
 ##
 ##  Creates a resource group, a Log Analytics workspace and a workspace-based
 ##  Application Insights component.

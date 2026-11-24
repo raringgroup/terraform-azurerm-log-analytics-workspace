@@ -14,7 +14,7 @@
 ## limitations under the License.
 ## ----------------------------------------------------------------------------
 ##
-##  modules/log-analytics/_variables.tf
+##  _variables.tf
 ##
 ##  Input variables for the Log Analytics and Application Insights module.
 ## ----------------------------------------------------------------------------

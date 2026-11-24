@@ -14,7 +14,7 @@
 ## limitations under the License.
 ## ----------------------------------------------------------------------------
 ##
-##  modules/log-analytics/application-insights.tf
+##  application-insights.tf
 ##
 ##  Workspace-based Application Insights, created only when enabled.
 ## ----------------------------------------------------------------------------
