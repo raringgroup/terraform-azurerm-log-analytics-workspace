@@ -16,12 +16,12 @@
 
 # TERRAGRUNT — LOG ANALYTICS EXAMPLE
 # ------------------------------------------------------------------------------
-# modules/log-analytics/examples/complete/terragrunt.hcl
+# examples/complete/terragrunt.hcl
 #
 # Deploys the log-analytics example to Azure. Generates the azurerm provider
 # and backend and passes the standard context inputs.
 #
-# Module: modules/log-analytics
+# Module: terraform-azurerm-log-analytics-workspace
 # ------------------------------------------------------------------------------
 
 locals {

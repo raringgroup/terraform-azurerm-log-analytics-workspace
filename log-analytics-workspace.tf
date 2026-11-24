@@ -14,7 +14,7 @@
 ## limitations under the License.
 ## ----------------------------------------------------------------------------
 ##
-##  modules/log-analytics/log-analytics-workspace.tf
+##  log-analytics-workspace.tf
 ##
 ##  Log Analytics workspace named and tagged from the context module.
 ## ----------------------------------------------------------------------------

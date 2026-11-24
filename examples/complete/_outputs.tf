@@ -14,7 +14,7 @@
 ## limitations under the License.
 ## ----------------------------------------------------------------------------
 ##
-##  modules/log-analytics/examples/complete/_outputs.tf
+##  examples/complete/_outputs.tf
 ##
 ##  Outputs of the example. The Application Insights connection string is a
 ##  sensitive module output and is not re-exported here.

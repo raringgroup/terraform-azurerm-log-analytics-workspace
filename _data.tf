@@ -16,7 +16,7 @@
 ## limitations under the License.
 ## ----------------------------------------------------------------------------
 ##
-##  modules/log-analytics/_data.tf
+##  _data.tf
 ##
 ##  Azure caller identity and subscription lookups, exposed as locals.
 ## ----------------------------------------------------------------------------

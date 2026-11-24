@@ -14,7 +14,7 @@
 ## limitations under the License.
 ## ----------------------------------------------------------------------------
 ##
-##  modules/log-analytics/_outputs.tf
+##  _outputs.tf
 ##
 ##  Output values for the Log Analytics and Application Insights module.
 ## ----------------------------------------------------------------------------
